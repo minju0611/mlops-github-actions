@@ -17,7 +17,7 @@ jobs:
         python-version: "3.8"
     - name: Display Python version
       run: python -c "import sys; print(sys.version)"
-    - name: Build & push Docker image # docker 이미지를 만들어서 보내는  부분 
+    - name: Build & push Docker image # docker 이미지를 만들어서 보내는 부분 
       uses: mr-smithers-excellent/docker-build-push@v5
       with:
         image: minju0611/github-actions-push
